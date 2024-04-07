@@ -65,14 +65,16 @@ main {
   margin-bottom: 20px;
 }
 
-#containerHome {
+#containerHome,
+#containerAbout,
+#containerProject {
   align-items: center;
   display: flex;
   flex-direction: column;
   border: 2px solid;
   border-color: light-dark(#0d1017, #fdebe1);
   box-shadow: 10px 5px 0px 0px light-dark(#0d1017, #fdebe1);
-  margin: 100px 50px 50px 50px;
+  margin: 70px 20px 20px 20px;
 }
 
 #Logo {
@@ -109,16 +111,6 @@ h1 {
 }
 
 /** Sobre mi */
-
-#containerAbout {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  border: 2px solid;
-  border-color: light-dark(#0d1017, #fdebe1);
-  box-shadow: 10px 5px 0px 0px light-dark(#0d1017, #fdebe1);
-  margin: 100px 50px 50px 50px;
-}
 
 #contentInfo {
   display: flex;
@@ -160,16 +152,6 @@ h1 {
 
 /** Projectos */
 
-#containerProject {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  border: 2px solid;
-  border-color: light-dark(#0d1017, #fdebe1);
-  box-shadow: 10px 5px 0px 0px light-dark(#0d1017, #fdebe1);
-  margin: 100px 50px 50px 50px;
-}
-
 .contentProject {
   margin: 30px;
 }
@@ -179,7 +161,8 @@ h2 {
 }
 
 .contentProject img {
-  width: 300px;
+  width: 250px;
+  border-radius: 10px;
 }
 
 .contentProject ul {
@@ -321,5 +304,10 @@ h2 {
     justify-content: space-around;
     padding: 20px;
     width: 80%;
+    flex-wrap: wrap;
+  }
+
+  .contentProject img {
+    width: 300px;
   }
 }
