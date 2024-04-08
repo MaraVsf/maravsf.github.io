@@ -57,6 +57,9 @@ header div {
   width: 30px;
   cursor: pointer;
   z-index: 9999;
+  background-color: #fdebe1;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 /** Inicio */
@@ -88,6 +91,7 @@ h1 {
   text-align: center;
   font-size: 28px;
   margin: 20px;
+  width: 280px;
 }
 
 #containerHome p {
@@ -108,6 +112,9 @@ h1 {
 
 #containerHome div img {
   width: 50px;
+  background-color: #0d1017;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 /** Sobre mi */
