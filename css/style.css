@@ -1,128 +1,135 @@
-:root {
-  color-scheme: light dark;
-}
-
 * {
   box-sizing: border-box;
   margin: 0px;
 }
 
 body {
-  background-color: light-dark(#fdebe1, #0d1017);
+  background-color: #ba5b4e;
+  color: #272727;
 }
 
-/** Header */
+.container {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f4ed;
+  border: 2px solid;
+  border-radius: 3px;
+  border-color: #272727;
+  box-shadow: 8px 10px 0px 0px #272727;
+}
 
-/* Pc */
+/** Menu */
+
+.contentMenu {
+  border-bottom: 2px solid #272727;
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+}
 
 #navMenu {
-  display: none;
+  display: flex;
+  padding-left: 0px;
 }
 
-/* Movil */
-
-#navBtn {
-  display: none;
-  text-align: center;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  padding-top: 80px;
-  background-color: light-dark(#fdebe1, #0d1017);
-}
-
-#navBtn li {
-  font-size: 30px;
-  margin: 30px;
+#navMenu li {
+  margin: 10px;
   list-style: none;
 }
 
-#navBtn a {
+#navMenu a {
   text-decoration: none;
-  text-transform: uppercase;
-  color: light-dark(#0d1017, #fdebe1);
+  color: #272727;
 }
 
-header div {
+.bold {
+  font-weight: bolder;
+}
+
+.containerCircle {
   display: flex;
-  justify-content: end;
-  margin: 20px;
-  position: fixed;
-  top: 0;
-  right: 0;
-}
-
-#btnMenu {
-  width: 30px;
-  cursor: pointer;
-  z-index: 9999;
-  background-color: #fdebe1;
-  padding: 5px;
-  border-radius: 5px;
-}
-
-/** Inicio */
-main {
-  background-color: light-dark(#fdebe1, #0d1017);
-  margin-bottom: 20px;
-}
-
-#containerHome,
-#containerAbout,
-#containerProject {
   align-items: center;
+}
+
+.circle1,
+.circle2,
+.circle3 {
+  margin: 2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #272727;
+  cursor: pointer;
+}
+
+.circle1 {
+  background-color: #ba5b4e;
+}
+
+.circle2 {
+  background-color: #393d8d;
+}
+
+.circle3 {
+  background-color: #58a287;
+}
+
+/** Home */
+
+.contentHome,
+.contentAbout,
+.containerProject {
   display: flex;
   flex-direction: column;
-  border: 2px solid;
-  border-color: light-dark(#0d1017, #fdebe1);
-  box-shadow: 10px 5px 0px 0px light-dark(#0d1017, #fdebe1);
-  margin: 70px 20px 20px 20px;
+  align-items: center;
 }
 
 #Logo {
   max-width: 200px;
   margin: 50px 30px;
-  border-radius: 50%;
   width: auto;
 }
 
-h1 {
-  text-align: center;
-  font-size: 28px;
-  margin: 20px;
-  width: 280px;
+.contentHome {
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    width: 280px;
+  }
+
+  p {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .contact {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact a {
+    margin: 10px;
+  }
+
+  .contact img {
+    width: 50px;
+    background-color: #272727;
+    padding: 5px;
+    border-radius: 10px;
+  }
 }
 
-#containerHome p {
-  font-size: 16px;
-  text-align: center;
-  margin-top: 30px;
-}
+/** About me */
 
-#containerHome div {
-  margin: 50px;
-  display: flex;
-  justify-content: center;
-}
-
-#containerHome div a {
-  margin: 30px;
-}
-
-#containerHome div img {
-  width: 50px;
-  background-color: #0d1017;
-  padding: 5px;
-  border-radius: 10px;
-}
-
-/** Sobre mi */
-
-#contentInfo {
+.contentInfo {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: 2px solid #272727;
+  padding-bottom: 20px;
 }
 
 #imgPerfil {
@@ -133,188 +140,67 @@ h1 {
   justify-content: center;
 }
 
-#contentInfo p {
-  font-size: 18px;
+.contentInfo p {
   margin: 20px;
 }
 
-#contentStudy {
+.contentStudy {
   margin: 20px;
 }
 
-#contentStudy ul {
-  padding: 0px;
-}
-
-#contentStudy li {
-  list-style: none;
-}
-
-.tittle {
-  margin-top: 20px;
-  font-weight: bold;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-
-/** Projectos */
-
-.contentProject {
-  margin: 30px;
-}
-
-h2 {
-  margin-bottom: 5px;
-}
-
-.contentProject img {
-  width: 250px;
-  border-radius: 10px;
-}
-
-.contentProject ul {
-  display: flex;
-  justify-content: start;
-  padding: 0;
-}
-
-.contentProject li {
-  list-style: none;
-  margin: 5px;
-  text-transform: uppercase;
-}
-
-@media (min-width: 768px) {
-  /** Header */
-
-  /* Pc */
-
-  #navMenu {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: light-dark(#fdebe1, #0d1017);
-  }
-
-  #navMenu li {
-    font-size: 16px;
-    margin: 30px;
-    list-style: none;
-  }
-
-  #navMenu a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: light-dark(#0d1017, #fdebe1);
-  }
-
-  /* Movil */
-
-  #btnMenu {
-    display: none;
-  }
-
-  /** Inicio */
-
-  main {
-    display: flex;
-    justify-content: center;
-  }
-
-  #containerHome {
-    margin: 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 20px;
-    width: 80%;
-  }
-
-  h1 {
-    font-size: 40px;
-    margin: 0;
-    width: 320px;
-  }
-
-  h1,
-  #containerHome p {
-    text-align: right;
-  }
-
-  #containerHome div {
-    margin: 0;
-    justify-content: right;
-  }
-
-  #containerHome div a {
-    margin-right: 0px;
-  }
-
-  /** Sobre mi */
-
-  #containerAbout {
-    margin: 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 20px;
-    width: 80%;
-  }
-
-  #contentInfo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 500px;
-    margin-right: 30px;
-  }
-
-  #imgPerfil {
-    max-width: 200px;
-    margin: 20px;
-    border-radius: 50%;
-    width: auto;
-    justify-content: center;
-  }
-
-  #contentInfo p {
-    font-size: 18px;
-    margin: 20px;
-    width: auto;
-  }
-
-  #contentStudy {
-    margin: 20px;
-  }
-
-  #contentStudy ul {
+.contentStudy {
+  ul {
     padding: 0px;
   }
 
-  #contentStudy li {
+  li {
     list-style: none;
   }
 
   .tittle {
     margin-top: 20px;
     font-weight: bold;
-    font-size: 18px;
     text-transform: uppercase;
   }
+}
 
-  /** Projectos */
+/** Project */
 
-  #containerProject {
-    margin: 0px;
+.containerProject {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contentProject {
+  margin: 20px;
+  width: 250px;
+}
+
+.contentProject {
+  h2 {
+    margin-bottom: 5px;
+  }
+
+  img {
+    width: 250px;
+    border-radius: 10px;
+  }
+
+  ul {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 20px;
-    width: 80%;
+    justify-content: start;
+    padding: 0;
     flex-wrap: wrap;
   }
 
-  .contentProject img {
-    width: 300px;
+  li {
+    list-style: none;
+    margin: 5px;
+    text-transform: uppercase;
+    background-color: #ba5b4e;
+    padding: 5px;
+    border-radius: 10px;
   }
 }
