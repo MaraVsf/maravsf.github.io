@@ -149,6 +149,10 @@ body {
 }
 
 .contentStudy {
+  h3 {
+    text-align: center;
+  }
+
   ul {
     padding: 0px;
   }
@@ -159,8 +163,11 @@ body {
 
   .tittle {
     margin-top: 20px;
+  }
+
+  .tittle,
+  .subTittle {
     font-weight: bold;
-    text-transform: uppercase;
   }
 }
 
@@ -185,6 +192,7 @@ body {
 
   img {
     width: 250px;
+    height: 110px;
     border-radius: 10px;
   }
 
@@ -202,5 +210,95 @@ body {
     background-color: #ba5b4e;
     padding: 5px;
     border-radius: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  /** Menu */
+
+  .containerCircle {
+    margin-right: 5px;
+  }
+
+  .circle1,
+  .circle2,
+  .circle3 {
+    margin: 5px;
+    width: 15px;
+    height: 15px;
+  }
+
+  /** Home */
+
+  .contentHome {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .contentHome {
+    h1 {
+      font-size: 40px;
+      width: 320px;
+    }
+
+    h1,
+    p {
+      text-align: right;
+    }
+
+    .contact {
+      justify-content: end;
+    }
+
+    .contact,
+    .contact a {
+      margin-right: 0;
+    }
+  }
+
+  /** About me */
+
+  .contentAbout {
+    flex-direction: row;
+  }
+
+  .contentInfo {
+    border-bottom: none;
+    border-right: 2px solid #272727;
+    padding: 20px;
+  }
+
+  .contentInfo p {
+    width: 300px;
+  }
+
+  .contentStudy {
+    padding: 0px 40px 0px 40px;
+    margin: 0;
+  }
+
+  .contentStudy {
+    h3 {
+      text-align: center;
+    }
+
+    ul {
+      padding: 0px;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    .tittle {
+      margin-top: 20px;
+    }
+
+    .tittle,
+    .subTittle {
+      font-weight: bold;
+    }
   }
 }
